@@ -1,0 +1,29 @@
+# Local tools, downloaded dependencies, build outputs and host executables
+/.venv/
+/.pio/
+/.platformio/
+/artifacts/
+__pycache__/
+*.py[cod]
+
+# Local milestone backups contain duplicate source archives and compiled binaries.
+# Preserve on disk; distribute selected binaries via a GitHub Release if desired.
+/milestones/
+
+# Original reference manual; the authoritative v1.3 specification in docs/ is kept.
+/Mom-Genix_Mom-Duties_Error-Code-Manual(1).pdf
+
+# Local editor / operating-system files
+/.vscode/
+/.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local secrets, if introduced later (the Halloween firmware uses none)
+.env
+.env.*
+!.env.example
+*.pem
+*.key

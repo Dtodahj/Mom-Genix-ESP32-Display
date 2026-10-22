@@ -1,0 +1,293 @@
+Processing diagnostic_ili9341 (platform: platformio/espressif32@6.10.0; board: esp32dev; framework: arduino)
+--------------------------------------------------------------------------------
+Library Manager: Installing bodmer/TFT_eSPI @ 2.5.43
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: TFT_eSPI@2.5.43 has been installed!
+Library Manager: Installing https://github.com/PaulStoffregen/XPT2046_Touchscreen/archive/d57f64c8b5f2bc5b8d10d121550806eeff7b06d9.zip
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: XPT2046_Touchscreen@0.0.0+20261022133502 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.10.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES:
+ - framework-arduinoespressif32 @ 3.20017.0 (2.0.17)
+ - tool-esptoolpy @ 1.40501.0 (4.5.1)
+ - tool-scons @ 4.40801.0 (4.8.1)
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 36 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- TFT_eSPI @ 2.5.43
+|-- XPT2046_Touchscreen @ 0.0.0+20261022133502
+|-- MomGenix
+|-- WiFi @ 2.0.0
+|-- SPI @ 2.0.0
+Building in release mode
+Compiling .pio\build\diagnostic_ili9341\src\diagnostic_renderer.cpp.o
+Compiling .pio\build\diagnostic_ili9341\src\hardware.cpp.o
+Compiling .pio\build\diagnostic_ili9341\src\main.cpp.o
+Building .pio\build\diagnostic_ili9341\bootloader.bin
+Generating partitions .pio\build\diagnostic_ili9341\partitions.bin
+Compiling .pio\build\diagnostic_ili9341\liba53\SPI\SPI.cpp.o
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio\build\diagnostic_ili9341\lib816\FS\FS.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib816\FS\vfs_api.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib7f0\SPIFFS\SPIFFS.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib744\LittleFS\LittleFS.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib9ea\TFT_eSPI\TFT_eSPI.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib1e2\XPT2046_Touchscreen\XPT2046_Touchscreen.cpp.o
+Compiling .pio\build\diagnostic_ili9341\libc4c\MomGenix\layout.cpp.o
+Compiling .pio\build\diagnostic_ili9341\libc4c\MomGenix\renderer.cpp.o
+Compiling .pio\build\diagnostic_ili9341\libc4c\MomGenix\state_machine.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFi.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiAP.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiClient.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiGeneric.cpp.o
+In file included from include/diagnostic_renderer.h:2,
+                 from src/diagnostic_renderer.cpp:1:
+.pio/libdeps/diagnostic_ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+In file included from include/hardware.h:3,
+                 from src/hardware.cpp:1:
+.pio/libdeps/diagnostic_ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+In file included from include/hardware.h:3,
+                 from src/main.cpp:2:
+.pio/libdeps/diagnostic_ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiMulti.cpp.o
+Archiving .pio\build\diagnostic_ili9341\libc4c\libMomGenix.a
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiSTA.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiScan.cpp.o
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiServer.cpp.o
+Archiving .pio\build\diagnostic_ili9341\liba53\libSPI.a
+Compiling .pio\build\diagnostic_ili9341\lib64e\WiFi\WiFiUdp.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\Esp.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\FirmwareMSC.cpp.o
+Archiving .pio\build\diagnostic_ili9341\lib816\libFS.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\FunctionalInterrupt.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\HWCDC.cpp.o
+Archiving .pio\build\diagnostic_ili9341\lib7f0\libSPIFFS.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\IPAddress.cpp.o
+Archiving .pio\build\diagnostic_ili9341\lib744\libLittleFS.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\IPv6Address.cpp.o
+In file included from .pio/libdeps/diagnostic_ili9341/TFT_eSPI/TFT_eSPI.cpp:16:
+.pio/libdeps/diagnostic_ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Archiving .pio\build\diagnostic_ili9341\lib1e2\libXPT2046_Touchscreen.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\MD5Builder.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\Print.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\StreamString.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\USB.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\USBCDC.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\USBMSC.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\WMath.cpp.o
+Archiving .pio\build\diagnostic_ili9341\lib64e\libWiFi.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\base64.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\cbuf.cpp.o
+Archiving .pio\build\diagnostic_ili9341\lib9ea\libTFT_eSPI.a
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-adc.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-bt.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-cpu.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-dac.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-gpio.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-i2c-slave.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-i2c.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-ledc.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-matrix.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-misc.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-psram.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-rgb-led.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-rmt.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-sigmadelta.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-spi.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-time.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-timer.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-tinyusb.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-touch.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\esp32-hal-uart.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\firmware_msc_fat.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\libb64\cdecode.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\libb64\cencode.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\main.cpp.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\stdlib_noniso.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\wiring_pulse.c.o
+Compiling .pio\build\diagnostic_ili9341\FrameworkArduino\wiring_shift.c.o
+Archiving .pio\build\diagnostic_ili9341\libFrameworkArduino.a
+Linking .pio\build\diagnostic_ili9341\firmware.elf
+Retrieving maximum program size .pio\build\diagnostic_ili9341\firmware.elf
+Checking size .pio\build\diagnostic_ili9341\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.7% (used 48296 bytes from 327680 bytes)
+Flash: [=======   ]  68.0% (used 891629 bytes from 1310720 bytes)
+Building .pio\build\diagnostic_ili9341\firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 24.13 seconds =========================
+
+Processing diagnostic_st7789 (platform: platformio/espressif32@6.10.0; board: esp32dev; framework: arduino)
+--------------------------------------------------------------------------------
+Library Manager: Installing bodmer/TFT_eSPI @ 2.5.43
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: TFT_eSPI@2.5.43 has been installed!
+Library Manager: Installing https://github.com/PaulStoffregen/XPT2046_Touchscreen/archive/d57f64c8b5f2bc5b8d10d121550806eeff7b06d9.zip
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: XPT2046_Touchscreen@0.0.0+20261022133524 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.10.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES:
+ - framework-arduinoespressif32 @ 3.20017.0 (2.0.17)
+ - tool-esptoolpy @ 1.40501.0 (4.5.1)
+ - tool-scons @ 4.40801.0 (4.8.1)
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 36 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- TFT_eSPI @ 2.5.43
+|-- XPT2046_Touchscreen @ 0.0.0+20261022133524
+|-- MomGenix
+|-- WiFi @ 2.0.0
+|-- SPI @ 2.0.0
+Building in release mode
+Compiling .pio\build\diagnostic_st7789\src\diagnostic_renderer.cpp.o
+Compiling .pio\build\diagnostic_st7789\src\hardware.cpp.o
+Compiling .pio\build\diagnostic_st7789\src\main.cpp.o
+Building .pio\build\diagnostic_st7789\bootloader.bin
+Generating partitions .pio\build\diagnostic_st7789\partitions.bin
+Compiling .pio\build\diagnostic_st7789\liba53\SPI\SPI.cpp.o
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio\build\diagnostic_st7789\lib816\FS\FS.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib816\FS\vfs_api.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib7f0\SPIFFS\SPIFFS.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib744\LittleFS\LittleFS.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib5d3\TFT_eSPI\TFT_eSPI.cpp.o
+Compiling .pio\build\diagnostic_st7789\libc94\XPT2046_Touchscreen\XPT2046_Touchscreen.cpp.o
+Compiling .pio\build\diagnostic_st7789\libc4c\MomGenix\layout.cpp.o
+Compiling .pio\build\diagnostic_st7789\libc4c\MomGenix\renderer.cpp.o
+Compiling .pio\build\diagnostic_st7789\libc4c\MomGenix\state_machine.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFi.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiAP.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiClient.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiGeneric.cpp.o
+In file included from include/hardware.h:3,
+                 from src/hardware.cpp:1:
+.pio/libdeps/diagnostic_st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+In file included from include/diagnostic_renderer.h:2,
+                 from src/diagnostic_renderer.cpp:1:
+.pio/libdeps/diagnostic_st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+In file included from include/hardware.h:3,
+                 from src/main.cpp:2:
+.pio/libdeps/diagnostic_st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiMulti.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiSTA.cpp.o
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiScan.cpp.o
+Archiving .pio\build\diagnostic_st7789\libc4c\libMomGenix.a
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiServer.cpp.o
+Archiving .pio\build\diagnostic_st7789\liba53\libSPI.a
+Compiling .pio\build\diagnostic_st7789\lib64e\WiFi\WiFiUdp.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\Esp.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\FirmwareMSC.cpp.o
+Archiving .pio\build\diagnostic_st7789\lib816\libFS.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\FunctionalInterrupt.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\HWCDC.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\HardwareSerial.cpp.o
+Archiving .pio\build\diagnostic_st7789\lib7f0\libSPIFFS.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\IPAddress.cpp.o
+Archiving .pio\build\diagnostic_st7789\lib744\libLittleFS.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\IPv6Address.cpp.o
+In file included from .pio/libdeps/diagnostic_st7789/TFT_eSPI/TFT_eSPI.cpp:16:
+.pio/libdeps/diagnostic_st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Archiving .pio\build\diagnostic_st7789\libc94\libXPT2046_Touchscreen.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\MD5Builder.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\Print.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\StreamString.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\USB.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\USBCDC.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\USBMSC.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\WMath.cpp.o
+Archiving .pio\build\diagnostic_st7789\lib64e\libWiFi.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\base64.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\cbuf.cpp.o
+Archiving .pio\build\diagnostic_st7789\lib5d3\libTFT_eSPI.a
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-adc.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-bt.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-cpu.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-dac.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-gpio.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-i2c-slave.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-i2c.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-ledc.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-matrix.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-misc.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-psram.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-rgb-led.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-rmt.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-sigmadelta.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-spi.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-time.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-timer.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-tinyusb.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-touch.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\esp32-hal-uart.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\firmware_msc_fat.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\libb64\cdecode.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\libb64\cencode.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\main.cpp.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\stdlib_noniso.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\wiring_pulse.c.o
+Compiling .pio\build\diagnostic_st7789\FrameworkArduino\wiring_shift.c.o
+Archiving .pio\build\diagnostic_st7789\libFrameworkArduino.a
+Linking .pio\build\diagnostic_st7789\firmware.elf
+Retrieving maximum program size .pio\build\diagnostic_st7789\firmware.elf
+Checking size .pio\build\diagnostic_st7789\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.7% (used 48296 bytes from 327680 bytes)
+Flash: [=======   ]  68.0% (used 891513 bytes from 1310720 bytes)
+Building .pio\build\diagnostic_st7789\firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 22.20 seconds =========================
+
+Environment         Status    Duration
+------------------  --------  ------------
+diagnostic_ili9341  SUCCESS   00:00:24.134
+diagnostic_st7789   SUCCESS   00:00:22.200
+========================= 2 succeeded in 00:00:46.334 =========================
